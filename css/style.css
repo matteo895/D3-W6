@@ -1,0 +1,195 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem 0;
+  color: white;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo img {
+  margin-right: 1rem;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.nav-logo-text {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.headline-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rosybrown;
+  text-align: center;
+  height: 10rem;
+  padding: 2rem;
+}
+
+.headline-text {
+  font-size: 3rem;
+  margin: 2rem 0;
+  font-weight: bold;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-bottom: 2rem;
+}
+
+.button {
+  padding: 0.7rem 1.5rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.button:hover {
+  background-color: #555;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Stili CSS per la sezione Hero */
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #f0f0f0;
+  height: 30rem;
+  opacity: 0;
+  animation: fadeAndSlideIn 3s ease forwards;
+}
+
+@keyframes fadeAndSlideIn {
+  0% {
+    opacity: 0;
+    transform: transletY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-container-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
+.hero-image {
+  margin-right: 20px;
+}
+
+.hero-image img {
+  height: 25rem;
+  border-radius: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  width: 30%;
+  margin-left: 3rem;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+/* Stili CSS per la griglia di 4 elementi */
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.grid-item {
+  margin: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  background-color: white;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid-item img {
+  height: 25rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 2rem;
+}
+
+.center-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.central-button {
+  margin-top: auto;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.center-button-container a:hover {
+  background-color: #555;
+}
+
+/*# sourceMappingURL=style.css.map */
